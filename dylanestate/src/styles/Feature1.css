@@ -1,0 +1,46 @@
+
+
+.feature1-container {
+    padding: 1.25rem; 
+  }
+  
+  .feature1-section {
+    padding: 1rem; 
+    background-color: #ffffff; 
+  }
+  
+  .feature1-header {
+    font-size: 1rem; 
+    font-weight: 600; 
+    margin-bottom: 0.25rem; 
+  }
+  
+  .feature1-content {
+    margin-top: 1rem; 
+  }
+  
+  .feature1-subsection {
+    margin-bottom: 1rem; 
+  }
+  
+  .feature1-label {
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    margin-bottom: 0.25rem; 
+  }
+  
+  .feature1-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); 
+    gap: 0.5rem;
+  }
+  
+  .feature1-option {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .feature1-option-text {
+    margin-left: 0.5rem; 
+  }
+  

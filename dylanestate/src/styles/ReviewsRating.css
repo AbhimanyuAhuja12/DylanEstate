@@ -1,0 +1,80 @@
+import React from 'react';
+import { FaStar } from 'react-icons/fa';
+import "..styles/RatingReview.css";
+
+const ratings = [
+    {
+        id: 1,
+        name: 'John Doe',
+        profilePic: 'https://via.placeholder.com/40',
+        rating: 4.5,
+        heading: 'Good House',
+        description: 'The house was in good condition and the neighborhood was quiet and friendly.',
+    },
+    {
+        id: 2,
+        name: 'Jane Smith',
+        profilePic: 'https://via.placeholder.com/40',
+        rating: 4.0,
+        heading: 'Nice Place',
+        description: 'The place was nice, clean, and well-maintained. Would recommend.',
+    },
+    {
+        id: 3,
+        name: 'Aditya Lohar',
+        profilePic: 'https://via.placeholder.com/40',
+        rating: 4.5,
+        heading: 'Good House',
+        description: 'The house was in good condition and the neighborhood was quiet and friendly.',
+    },
+    {
+        id: 4,
+        name: 'Devanshi Singhal',
+        profilePic: 'https://via.placeholder.com/40',
+        rating: 4.0,
+        heading: 'Nice Place',
+        description: 'The place was nice, clean, and well-maintained. Would recommend.',
+    },
+    // Add more ratings as needed
+];
+
+const RatingItem = ({ rating }) => (
+    <div className="rating-item">
+        <div className="rating-item-content">
+            <div className="rating-item-header">
+                <div className='rating-item-profile'>
+                    <img src={rating.profilePic} alt={`${rating.name}'s profile`} className="rating-item-profile-pic" />
+                    <h4 className="rating-item-name">{rating.name}</h4>
+                </div>
+                <div className="rating-item-score">
+                    <span className="rating-item-score-value">{rating.rating}</span>
+                    <FaStar className="rating-item-score-star" />
+                </div>
+            </div>
+
+            <div className='rating-item-body'>
+                <h5 className="rating-item-heading">{rating.heading}</h5>
+                <p className="rating-item-description">{rating.description}</p>
+            </div>
+        </div>
+    </div>
+);
+
+const ReviewsRating = () => {
+    return (
+        <div className="reviews-rating-container">
+            <h3 className="reviews-rating-title">Rating & Reviews</h3>
+            <div className="reviews-rating-list">
+                {ratings.map((rating) => (
+                    <RatingItem key={rating.id} rating={rating} />
+                ))}
+            </div>
+
+            <div className='reviews-rating-footer'>
+                <button className='reviews-rating-button'>Write a Review</button>
+            </div>
+        </div>
+    );
+};
+
+export default ReviewsRating;

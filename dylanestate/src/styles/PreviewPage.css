@@ -1,0 +1,37 @@
+.preview-page {
+    background-color: #ffffff;
+    color: #122b49;
+    height: 100vh; 
+    overflow-y: scroll;
+    padding: 1rem;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem; 
+  }
+  
+  .left-content {
+    flex: 2;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; 
+  }
+  
+  .right-content {
+    flex: 1;
+    padding: 0.5rem;
+    margin-top: 0.5rem; 
+  }
+  
+  .bottom-content {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1rem; 
+  }
+  

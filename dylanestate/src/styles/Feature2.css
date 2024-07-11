@@ -1,0 +1,32 @@
+.feature2-section {
+  padding: 1.25rem;
+}
+
+.feature2-subsection {
+  margin-bottom: 1rem;
+}
+
+.feature2-divider {
+  margin-top: 1rem;
+}
+
+.feature2-header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature2-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.5rem;
+}
+
+.feature2-option {
+  display: flex;
+  align-items: center;
+}
+
+.feature2-option-text {
+  margin-left: 0.5rem;
+}

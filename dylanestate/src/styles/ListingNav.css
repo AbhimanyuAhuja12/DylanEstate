@@ -1,0 +1,26 @@
+.listing-nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.nav-item {
+    flex: 1;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    background-color: #fcf8f4;
+    color: #7a7a7a;
+    border-bottom: 8px solid #d6d6d6;
+}
+
+.nav-item.active {
+    background-color: #edf2f8;
+    color: #333;
+    border-bottom-color: #122B49;
+}
+
+.nav-item.highlight {
+    color: #333;
+    border-bottom-color: #122B49;
+}

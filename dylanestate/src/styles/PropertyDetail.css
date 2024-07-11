@@ -1,0 +1,61 @@
+.generic-class-for-click {
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+}
+
+.generic-class-for-click:hover {
+    background-color: #f3f4f6;
+}
+
+.generic-class-for-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.generic-class-for-button:hover {
+    background-color: #1e4bb5;
+}
+
+.generic-class-for-button1 {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.generic-class-for-button1:hover {
+    background-color: #1e4bb5;
+}
+
+#inside-div {
+    background: #fff;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #inside-div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    #inside-div {
+        width: 100%;
+    }
+}
